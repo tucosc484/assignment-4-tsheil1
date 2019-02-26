@@ -1,18 +1,21 @@
 {
-  "name": "angular",
+  "name": "jvmixywj.github",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@angular/common": "^7.2.5",
-    "@angular/compiler": "^7.2.5",
-    "@angular/core": "^7.2.5",
-    "@angular/forms": "^7.2.5",
-    "@angular/platform-browser": "^7.2.5",
-    "@angular/platform-browser-dynamic": "^7.2.5",
-    "@angular/router": "^7.2.5",
-    "core-js": "^2.6.5",
-    "rxjs": "^6.4.0",
-    "zone.js": "^0.8.29"
+    "rxjs": "6.4.0",
+    "core-js": "2.6.5",
+    "zone.js": "0.8.29",
+    "@types/node": "8.9.5",
+    "@angular/core": "7.2.6",
+    "@angular/forms": "7.2.6",
+    "@types/jasmine": "2.8.16",
+    "@angular/common": "7.2.6",
+    "@angular/router": "7.2.6",
+    "@angular/compiler": "7.2.6",
+    "@types/jasminewd2": "2.0.6",
+    "@angular/platform-browser": "7.2.6",
+    "@angular/platform-browser-dynamic": "7.2.6"
   },
   "scripts": {
     "ng": "ng",
