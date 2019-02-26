@@ -16,14 +16,50 @@ import { displayCommentsComponent } from './displayComments.component';
     </div>
     <div *ngIf="displayOne">
       <button (click)="goBack()">Go back</button>
-      <h2>{{post.title}}</h2>
-      <p>{{post.body}}</p>
+      <div class="postBox">
+        <h2>{{post.title}}</h2>
+        <p>{{post.body}}</p>
+      </div>
+      <p id="break">Comment Section: </p>
       <div *ngFor="let comment of comments" class="commentBox">
-        <p>{{comment.name}} -- {{comment.email}}</p>
         <p>{{comment.body}}</p>
+        <p id="commentName">{{comment.name}} -- {{comment.email}}</p>
       </div>
     </div>
-  `
+  `,
+
+  styles: [`.postBox { 
+              border: 1px solid black; 
+              padding: 0px 5px 5px 5px;
+              margin: 4px 0px 4px 0px;
+              background-color: lightblue;
+            }
+            .commentBox {
+              border: 1px solid black; 
+              margin: 4px 0px 4px 0px;
+              background-color: teal;
+            }
+            .commentBox p {
+              padding-left: 2px;
+            }
+            #commentName {
+              font-weight: bold;
+            }
+            button {
+              border-radius: 20px;
+              cursor: pointer;
+              background-color: black;
+              color: white;
+            }
+            #break {
+              background-image: linear-gradient(to right, teal, lightblue);
+              font-size: 20px;
+
+            }
+
+
+    
+    }`]
 })
 export class displayAllPostsComponent  {
 
